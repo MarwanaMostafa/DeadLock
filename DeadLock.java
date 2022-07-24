@@ -60,40 +60,40 @@ public class FinalAss1 {
 
     /************************ TEST CODE AND CALCULATE NEED ********************/
     public static void initializeValues() {
-        /*
-         * System.out.println("Enter number of Process");
-         * NP = input.nextInt();
-         * System.out.println("Enter number of Resources");
-         * NR = input.nextInt();
-         * for (int i = 0; i < NP; i++) {
-         * System.out.println("Enter Allocated Resource for P" + i);
-         * for (int j = 0; j < NR; j++) {
-         * allocation[i][j] = input.nextInt();
-         * tempAllocation[i][j] = allocation[i][j];
-         * }
-         * }
-         * for (int i = 0; i < NP; i++) {
-         * 
-         * System.out.println("Enter Max Resource for P" + i);
-         * for (int j = 0; j < NR; j++) {
-         * max[i][j] = input.nextInt();
-         * tempMax[i][j] = max[i][j];
-         * }
-         * }
-         */
-        FinishProcess = new boolean[] { false, false, false, false, false };
-        allocation = new int[][] { { 0, 1, 0 }, { 2, 0, 0 }, { 3, 0, 2 }, { 2, 1, 1 }, { 0, 0, 2 } };
-        tempAllocation = new int[][] { { 0, 1, 0 }, { 2, 0, 0 }, { 3, 0, 2 }, { 2, 1, 1 }, { 0, 0, 2 } };
-        max = new int[][] { { 7, 5, 3 }, { 3, 2, 2 }, { 9, 0, 2 }, { 2, 2, 2 }, { 4, 3, 3 } };
-        tempMax = new int[][] { { 7, 5, 3 }, { 3, 2, 2 }, { 9, 0, 2 }, { 2, 2, 2 }, { 4, 3, 3 } };
+        
+        System.out.println("Enter number of Process");
+        NP = input.nextInt();
+        System.out.println("Enter number of Resources");
+        NR = input.nextInt();
+        for (int i = 0; i < NP; i++) {
+        System.out.println("Enter Allocated Resource for P" + i);
+        for (int j = 0; j < NR; j++) {
+        allocation[i][j] = input.nextInt();
+        tempAllocation[i][j] = allocation[i][j];
+        }
+        }
+        for (int i = 0; i < NP; i++) {
+        
+        System.out.println("Enter Max Resource for P" + i);
+        for (int j = 0; j < NR; j++) {
+        max[i][j] = input.nextInt();
+        tempMax[i][j] = max[i][j];
+        }
+        }
+        
+       // FinishProcess = new boolean[] { false, false, false, false, false };
+       // allocation = new int[][] { { 0, 1, 0 }, { 2, 0, 0 }, { 3, 0, 2 }, { 2, 1, 1 }, { 0, 0, 2 } };
+       // tempAllocation = new int[][] { { 0, 1, 0 }, { 2, 0, 0 }, { 3, 0, 2 }, { 2, 1, 1 }, { 0, 0, 2 } };
+       // max = new int[][] { { 7, 5, 3 }, { 3, 2, 2 }, { 9, 0, 2 }, { 2, 2, 2 }, { 4, 3, 3 } };
+       // tempMax = new int[][] { { 7, 5, 3 }, { 3, 2, 2 }, { 9, 0, 2 }, { 2, 2, 2 }, { 4, 3, 3 } };
 
-        // System.out.println("Enter Available Resource in Bank");
-        // for (int j = 0; j < NR; j++) {
-        // available[j] = input.nextInt();
-        // tempAvailable[j] = available[j];
-        // }
-        available = new int[] { 3, 3, 2 };// 230 this case occur deadlock and sovle it in end
-        tempAvailable = new int[] { 3, 3, 2 };
+         System.out.println("Enter Available Resource in Bank");
+         for (int j = 0; j < NR; j++) {
+         available[j] = input.nextInt();
+         tempAvailable[j] = available[j];
+         }
+        //available = new int[] { 3, 3, 2 };// 230 this case occur deadlock and sovle it in end
+        //tempAvailable = new int[] { 3, 3, 2 };
     }
 
     public static void calculateNeed() {
