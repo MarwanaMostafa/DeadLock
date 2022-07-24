@@ -18,20 +18,20 @@ Banker algorithm  __grant resource only if__ process __leaves__ system in __safe
 ## How it Works :
   1-we keep track of the resources using the following  data structure:
    
-   i-  int [ ] available; //the available amount of each resource
+    i-  int [ ] available; //the available amount of each resource
    
-   ii- int [ ][ ] maximum; //the maximum demand of each process
+    ii- int [ ][ ] maximum; //the maximum demand of each process
    
-   iii-int [ ][ ] allocation; //the amount currently allocated to each process
+    iii-int [ ][ ] allocation; //the amount currently allocated to each process
    
-   iv- int [ ][ ] need; //the remaining needs of each process
+    iv- int [ ][ ] need; //the remaining needs of each process
     
- 2-Process can request(RQ) resource and add these resources to needed array for this process __ for the given process and check again if the system is in a safe state . __ 
+ 2-Process can request(RQ) resource and add these resources to needed array for this process __for the given process and check again if the system is in a safe state .__ 
  
- 3-if request let to __ DeadLock __. we do check each process and do release for The process that has the __ most number __ of rsources
+ 3-if request let to __DeadLock__. we do check each process and do release for The process that has the __most number__ of rsources
 
  
- 4- Process can release (__ RL __)resource so check if release resources are less than or equal to allocated resources and if so, then subtract 
+ 4- Process can release (__RL__)resource so check if release resources are less than or equal to allocated resources and if so, then subtract 
     this release resources from allocated resources for a given process.
 
  
