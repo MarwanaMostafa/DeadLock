@@ -9,3 +9,9 @@ Banker algorithm  __grant resource only if__ process __leaves__ system in __safe
     ii-int [][] maximum; //the maximum demand of each process
     iii-int [][] allocation; //the amount currently allocated to each process
     iv-int [][] need; //the remaining needs of each process
+
+
+## See also :
+ * ### [Virtual-File-System-with-Protection](https://github.com/MarwanaMostafa/Virtual-File-System-with-Protection)
+
+ * ### [Disk-Scheduling](https://github.com/MarwanaMostafa/Disk-Scheduling)
